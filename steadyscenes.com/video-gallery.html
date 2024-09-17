@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">  
+    <link rel="stylesheet" href="popup.css"> 
+    <link rel="stylesheet" href="css/video-gallery.css">
+</head>
+<body>
+     <!--Header Section Coding Starts Here-->
+     <section class="header">
+        <div class="header-wrapper">
+            <div class="logo-wrap">
+             <a href="#" class="main-logo-link"><img src="images/header-logo.svg" alt="header-logo" class="header-logo"></a>
+            </div>
+            <div class="navlinks-btnwrap">
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
+                    <li class="nav-item"><a href="#sec2" class="nav-links">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Testimonials</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Our team</a></li>
+                </ul>
+            </nav>
+            <div class="btn-wrap">
+            <button class="header-btn" id="openPopupBtn">Get a Quote</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--Header Section Coding Ends Here-->
+<!--popup Section Coding Starts Here-->
+<section class="popup">
+    <div class="popup-wrapper">
+        <h2 class="popup-title">Send Us a Message</h2>
+        <div class="form-wrapper">
+            <form action="post">
+                <input type="text" name="name" id="name" placeholder="Full name" class="custom-input">
+                <input type="email" name="email" id="email" placeholder="Your email" class="custom-input">
+                <input type="headline" name="headline" id="headline" placeholder="Headline" class="custom-input">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+                <div class="popup-btn-wrapper">
+                <button class="popup-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <img src="./images/popup-close-icon.svg" class="popup-close-icon">
+    </div>
+  </section>  
+<!--popup Section Coding Ends Here-->
+
+<div id="container">
+    <div id="categories">
+        <h2 class="category-main-title">Categories</h2>
+        <div class="category" onclick="filterVideos('category1')">YouTube & Social Media Videos</div>
+        <div class="category" onclick="filterVideos('category2')">Commercials & Video Ads</div>
+        <div class="category" onclick="filterVideos('category3')">Real Estate Videos</div>
+        <div class="category" onclick="filterVideos('category4')">Event Recap & Highlight Videos</div>
+        <div class="category" onclick="filterVideos('category5')">Company Promo</div>
+        <div class="category" onclick="filterVideos('category6')">Product Videos</div>
+        <div class="category" onclick="filterVideos('category7')">Animations</div>
+        <div class="category" onclick="filterVideos('category8')">Testimonial Videos</div>
+        <div class="category" onclick="filterVideos('category9')">UGC Videos</div>
+        <div class="category" onclick="filterVideos('category10')">Crypto and NFT Videos</div>
+        <div class="category" onclick="filterVideos('category11')">Logo Animations & Intro Videos</div>
+        <div class="category" onclick="filterVideos('category12')">Lottie & Web Animations</div>
+    </div>
+    <div id="videos">
+        <!--YouTube & Social Media Videos-->
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/tqmYgFGlgAI" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category1">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <!--YouTube & Social Media Videos-->
+        
+   <!------------------------------------------------------------------------------------------------------------------------------------>
+        <!--Commercials & Video Ads-->
+        <div class="video-container category2">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category2">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category2">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category2">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <!--Commercials & Video Ads-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+        <div class="video-container category3">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+            <span class="video-name">Video</span>
+        </div>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category4">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category4">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category4">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category4">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category4">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category5">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="video-container category6">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category6">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category6">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category6">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category6">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category7">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_7_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category7">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_7_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category7">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_7_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category7">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_7_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category8">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_8_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_9_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_9_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_9_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_9_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_9_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category10">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_10_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="video-container category11">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_11_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category11">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_11_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category11">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_11_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category11">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_11_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category11">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_11_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_1" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<div class="video-container category12">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_12_2" frameborder="0" allowfullscreen class="youtube-galley"></iframe>
+    <span class="video-name">Video</span>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+    </div>
+</div>
+
+<div id="video-popup">
+    <span id="close-popup" onclick="closePopup">&times;</span>
+    <iframe id="popup-video" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+</body>
+</html>

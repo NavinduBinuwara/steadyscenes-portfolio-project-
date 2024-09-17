@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#categories {
+    width: 361px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #FFF;
+    box-shadow: 0px 0px 15.7px 0px rgba(0, 0, 0, 0.25);
+
+}
+.category-main-title{
+    color: #181818;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19.6px;
+    margin-bottom: 41px;
+    margin-top: 38px;
+}
+.youtube-galley{
+    width: 300px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  
+}
+.video-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.category {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.category.active {
+    background-color: #3498db;
+    color: white;
+}
+
+#videos {
+    width: 74.931vw;
+    height: fit-content;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+    row-gap: 51px;
+    column-gap: 35px;
+    margin-left: 38px;
+    margin-top: 62px;
+
+}
+
+.video-container {
+    position: relative;
+    width:300px;
+    display: none;
+}
+
+.video-container iframe {
+    width:300px;
+    height: 170px;
+    margin-bottom: 19px;
+}
+
+#video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#video-popup iframe {
+    width: 80%;
+    height: 60%;
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.category.active {
+    background-color: #3498db;
+    color: red; /* Change the color to red when active */
+}

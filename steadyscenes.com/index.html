@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steadyscenes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">  
+    <link rel="stylesheet" href="popup.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+</head>
+<body>
+    <!--Header Section Coding Starts Here-->
+    <section class="header">
+        <div class="header-wrapper">
+            <div class="logo-wrap">
+             <a href="#" class="main-logo-link"><img src="images/header-logo.svg" alt="header-logo" class="header-logo"></a>
+            </div>
+            <div class="navlinks-btnwrap">
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
+                    <li class="nav-item"><a href="#sec2" class="nav-links">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Testimonials</a></li>
+                    <li class="nav-item"><a href="#" class="nav-links">Our team</a></li>
+                </ul>
+            </nav>
+            <div class="btn-wrap">
+            <button class="header-btn" id="openPopupBtn">Get a Quote</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--Header Section Coding Ends Here-->
+    <!--Hero Section Coding Starts Here-->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content-box">
+                <h1 class="hero-heading">Crafting Stories Through Visual Magic</h1>
+                <div class="hero-btn-wrap">
+                    <button class="hero-btn1">Portfolio</button>
+                    <button class="hero-btn2" id="heroPopupBtn">Get a Quote</button>
+                </div>
+            </div>
+            <div class="scroll-container">
+                <span class="scroll-text">Continue</span>
+                <div class="scroll-arrows-type click-to-scroll" role="button">
+                    <div>
+                        <span class="scroll-arrows one"></span>
+                        <span class="scroll-arrows two"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero Section Coding Ends Here-->
+ <!--popup Section Coding Starts Here-->
+    <section class="popup">
+        <div class="popup-wrapper">
+            <h2 class="popup-title">Send Us a Message</h2>
+            <div class="form-wrapper">
+                <form action="post">
+                    <input type="text" name="name" id="name" placeholder="Full name" class="custom-input">
+                    <input type="email" name="email" id="email" placeholder="Your email" class="custom-input">
+                    <input type="headline" name="headline" id="headline" placeholder="Headline" class="custom-input">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+                    <div class="popup-btn-wrapper">
+                    <button class="popup-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <img src="./images/popup-close-icon.svg" class="popup-close-icon">
+        </div>
+      </section>  
+ <!--popup Section Coding Ends Here-->
+
+ <!--cards-and-icon-wrapper-section-starts-->
+ <section class="cards-icon-wrapper">
+    <div class="cardsicon-content-wrap">
+        <div class="cards-wrapper">
+            <h2 class="cards-title">Why us?</h2>
+            <p class="cards-para">Why choosing us is the best option for you?</p>
+            <div class="cards-grid-wrapper">
+                <div class="card" onmouseover="changeImage('cardImage', true)" onmouseout="changeImage('cardImage' , false)">
+                    <div class="card-content">
+                        <img src="./images/c1.png" alt="" class="card-icon c1" id="cardImage">  
+                        <h3 class="card-title">Unique</h3>
+                        <p class="card-para">Think different...Are you one of a kind? Then you must have some kind of uniqueness, I can make it happen.</p>
+                    </div>
+                </div>
+                <div class="card" onmouseover="changeImage2('cardImage2', true)" onmouseout="changeImage2('cardImage2', false)">
+                    <div class="card-content">
+                        <img src="./images/c2.png" alt="" class="card-icon c2" id="cardImage2">
+                        <h3 class="card-title">On Time Delivery</h3>
+                        <p class="card-para">Work effectively to ensure that your project is completed on time</p>
+                    </div>
+                </div>
+                <div class="card" onmouseover="changeImage3('cardImage3', true)" onmouseout="changeImage3('cardImage3', false)">
+                    <div class="card-content">
+                        <img src="./images/c3.png" alt="" class="card-icon c3" id="cardImage3">
+                        <h3 class="card-title">Affordable Price</h3>
+                        <p class="card-para">Optimize my processes to ensure maximum value for your investment</p>
+                    </div>
+                </div>
+                <div class="card" onmouseover="changeImage4('cardImage4', true)" onmouseout="changeImage4('cardImage4', false)">
+                    <div class="card-content">
+                        <img src="./images/c4.png" alt="" class="card-icon c4" id="cardImage4">
+                        <h3 class="card-title">High Quality</h3>
+                        <p class="card-para">Exceeding expectations with consistent perfection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons-wrapper">
+            <h2 class="icons-title">Our tools</h2>
+            <p class="icons-para">We are using adobe suite as my primary editing tool. <br> Also we will use any software with the requirement of clients.</p>
+            <div class="icons-grid-wrapper">
+                <div class="icon-set">
+                    <div class="icon-set-content">
+                    <img src="./images/image 1.png" alt="" class="icon-img">
+                    <h3 class="icon-text">After Effects</h3>
+                    </div>
+                </div>
+                <div class="icon-set">
+                    <div class="icon-set-content">
+                    <img src="./images/image 2.png" alt="" class="icon-img">
+                    <h3 class="icon-text">After Effects</h3>
+                    </div>
+                </div>
+                <div class="icon-set">
+                    <div class="icon-set-content">
+                    <img src="./images/image 3.png" alt="" class="icon-img">
+                    <h3 class="icon-text">After Effects</h3>
+                    </div>
+                </div>
+                <div class="icon-set">
+                    <div class="icon-set-content">
+                    <img src="./images/image 4.png" alt="" class="icon-img">
+                    <h3 class="icon-text">After Effects</h3>
+                    </div>
+                </div>
+                <div class="icon-set">
+                    <div class="icon-set-content">
+                    <img src="./images/image 5.png" alt="" class="icon-img">
+                    <h3 class="icon-text">After Effects</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+  <!--cards-and-icon-wrapper-section-Ends-->
+<!--portfolio-section-start-here-->
+<section class="portfolio">
+<div class="portfolio-wrapper">
+    <div class="portfolio-intro">
+        <h2 class="portfolio-caption">Portfolio</h2>
+        <p class="portfolio-para">Let’s have a look about some projects <br> that we have done for some clients</p>
+    </div>
+    <div class="youtube-itmes-grid-wrapper">
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImage('./images/y1.png')" onmouseout="changeImage('./images/l1.png')">
+            <img src="./images/l1.png" alt="" class="youtube-list-img" id="youtube-img1">
+            <h3 class="yoututbe-item-text">YouTube & Social Media Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey2('./images/y2.png')" onmouseout="changeImagey2('./images/l2.png')">
+            <img src="./images/l2.png" alt="" class="youtube-list-img" id="youtube-img2">
+            <h3 class="yoututbe-item-text">Commercials & Video Ads</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey3('./images/y3.png')" onmouseout="changeImagey3('./images/l3.png')">
+            <img src="./images/l3.png" alt="" class="youtube-list-img" id="youtube-img3">
+            <h3 class="yoututbe-item-text">Real Estate Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey4('./images/y4.png')" onmouseout="changeImagey4('./images/l4.png')">
+            <img src="./images/l4.png" alt="" class="youtube-list-img"  id="youtube-img4">
+            <h3 class="yoututbe-item-text">Event Recap & Highlight Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey5('./images/y5.png')" onmouseout="changeImagey5('./images/l5.png')">
+            <img src="./images/l5.png" alt="" class="youtube-list-img" id="youtube-img5">
+            <h3 class="yoututbe-item-text">Company Promo</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey6('./images/y6.png')" onmouseout="changeImagey6('./images/l6.png')">
+            <img src="./images/l6.png" alt="" class="youtube-list-img" id="youtube-img6">
+            <h3 class="yoututbe-item-text">Product Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey7('./images/y7.png')" onmouseout="changeImagey7('./images/l7.png')">
+            <img src="./images/l7.png" alt="" class="youtube-list-img" id="youtube-img7">
+            <h3 class="yoututbe-item-text">Animations</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey8('./images/y8.png')" onmouseout="changeImagey8('./images/l8.png')">
+            <img src="./images/l8.png" alt="" class="youtube-list-img" id="youtube-img8">
+            <h3 class="yoututbe-item-text">Testimonial Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey9('./images/y9.png')" onmouseout="changeImagey9('./images/l9.png')">
+            <img src="./images/l9.png" alt="" class="youtube-list-img" id="youtube-img9">
+            <h3 class="yoututbe-item-text">UGC Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey10('./images/y10.png')" onmouseout="changeImagey10('./images/l10.png')">
+            <img src="./images/l10.png" alt="" class="youtube-list-img" id="youtube-img10">
+            <h3 class="yoututbe-item-text">Crypto and NFT Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey11('./images/y11.png')" onmouseout="changeImagey11('./images/l11.png')">
+            <img src="./images/l11.png" alt="" class="youtube-list-img" id="youtube-img11">
+            <h3 class="yoututbe-item-text">Logo Animations & Intro Videos</h3>
+        </div></a>
+        <a href="video-gallery.html" class="ys-item"><div class="youtube-item" onmouseover="changeImagey12('./images/y11.png')" onmouseout="changeImagey12('./images/l11.png')">
+            <img src="./images/l12.png" alt="" class="youtube-list-img" id="youtube-img12">
+            <h3 class="yoututbe-item-text">Lottie & Web Animations</h3>
+        </div></a>
+    </div>
+    
+    <div class="youtube-slider-wrapper">
+        <h2 class="slider-caption">YouTube & Social Media Videos</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="mySwiper">
+              <!-- Slides -->
+              <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/O53dIDTIaAY" class="y-iframe"></iframe></div>
+              <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/4Fp3b6FiMpA" class="y-iframe"></iframe></div>
+              <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/SR3Am-RLqrs" class="y-iframe"></iframe></div>
+              <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/ZcChO8hBYPQ" class="y-iframe"></iframe></div>
+              <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/meQxZi32jTY" class="y-iframe"></iframe></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+
+    </div>
+</div>
+</section>
+ <!--portfolio-section-ends-here-->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/swiper.js"></script>
+
+ <!--Our team section start here-->
+ <section class="our-team">
+    <div class="our-team-content-wrapper">
+        <div class="our-team-intro-wrapper">
+            <h2 class="ourteam-title">Our team</h2>
+            <p class="ourteam-para">Meet our team members</p>
+        </div>
+        <div class="ourteam-member-wrapper">
+            <div class="member1">
+                <img src="./images/m1.png" alt="" class="memberimg">
+                <h2 class="name">Sakith Suhanjala</h2>
+                <p class="position">Co-Founder of Steadyscenes</p>
+            </div>
+            <div class="member2">
+                <img src="./images/m2.png" alt="" class="memberimg">
+                <h2 class="name">Devinda Mahasen</h2>
+                <p class="position">Co-Founder of Steadyscenes</p>  
+            </div>
+        </div>
+    </div>
+ </section>
+  <!--Our team section start here-->
+  <!--Testimonals section coding part start here-->
+  <section class="testimonials">
+    <div class="testimonal-wrapper">
+        <div class="testimonial-intro">
+            <h2 class="testimonal-title">Testimonials</h2>
+            <p class="testimonial-para">Let’s have a look what are the thoughts about our clients</p>
+        </div>
+        <div class="testimonial-slider-wrapper">
+            <div class="swiper t-swiper">
+                <div class="swiper-wrapper t-swiper-wrapper">
+                    <div class="swiper-slide t-swiper-slide">
+            <div class="testimonial-card">
+                <img src="./images/Frame.png" alt="" class="t-card-icon">
+                <p class="t-card-para">“Devinda is super awesome to work with! This is my second project with him and he will be my 
+                    long term video editor! He is very patient, does the work fast and very creative.”</p>
+                <img src="./images/t1.png" alt="" class="t-card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="108" viewBox="0 0 320 108" fill="none" class="t-svg">
+                    <path d="M137.499 20.9405C59.499 -11.0595 13.6657 0.607202 0.499023 10.4405V109.94H327.499V14.9404C296.666 30.2738 215.499 52.9405 137.499 20.9405Z" fill="url(#paint0_linear_534_367)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_534_367" x1="163.999" y1="0" x2="163.999" y2="109.94" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#5E3BEE"/>
+                        <stop offset="1" stop-color="#20068C"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <h2 class="t-card-title">Jhon Doe</h2>
+                  <h3 class="t-card-subtitle">YouTuber</h3>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="testimonial-card">
+                <img src="./images/Frame.png" alt="" class="t-card-icon">
+                <p class="t-card-para">“Great communication. Excellent final product. Accurate description of capability and execution. 
+                    Will work with on future projects.
+                    Amazing work!!! “</p>
+                <img src="./images/t2.png" alt="" class="t-card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="108" viewBox="0 0 320 108" fill="none" class="t-svg">
+                    <path d="M137.499 20.9405C59.499 -11.0595 13.6657 0.607202 0.499023 10.4405V109.94H327.499V14.9404C296.666 30.2738 215.499 52.9405 137.499 20.9405Z" fill="url(#paint0_linear_534_367)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_534_367" x1="163.999" y1="0" x2="163.999" y2="109.94" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#5E3BEE"/>
+                        <stop offset="1" stop-color="#20068C"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <h2 class="t-card-title">Jhon Doe</h2>
+                  <h3 class="t-card-subtitle">YouTuber</h3>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="testimonial-card">
+                <img src="./images/Frame.png" alt="" class="t-card-icon">
+                <p class="t-card-para">“Sakith does excellent work and completes each edit very quickly. This is my 10th video he has edited for me and its been a great experience. We will continue to edit our videos with him.”</p>
+                <img src="./images/t3.png" alt="" class="t-card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="108" viewBox="0 0 320 108" fill="none" class="t-svg">
+                    <path d="M137.499 20.9405C59.499 -11.0595 13.6657 0.607202 0.499023 10.4405V109.94H327.499V14.9404C296.666 30.2738 215.499 52.9405 137.499 20.9405Z" fill="url(#paint0_linear_534_367)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_534_367" x1="163.999" y1="0" x2="163.999" y2="109.94" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#5E3BEE"/>
+                        <stop offset="1" stop-color="#20068C"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <h2 class="t-card-title">Jhon Doe</h2>
+                  <h3 class="t-card-subtitle">YouTuber</h3>
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img src="./images/Frame.png" alt="" class="t-card-icon">
+                    <p class="t-card-para">“Sakith was great. He understand the idea for the video from the start. Had no problem making adjustments until it was exactly as needed.”</p>
+                    <img src="./images/t1.png" alt="" class="t-card-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="108" viewBox="0 0 320 108" fill="none" class="t-svg">
+                        <path d="M137.499 20.9405C59.499 -11.0595 13.6657 0.607202 0.499023 10.4405V109.94H327.499V14.9404C296.666 30.2738 215.499 52.9405 137.499 20.9405Z" fill="url(#paint0_linear_534_367)"/>
+                        <defs>
+                          <linearGradient id="paint0_linear_534_367" x1="163.999" y1="0" x2="163.999" y2="109.94" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#5E3BEE"/>
+                            <stop offset="1" stop-color="#20068C"/>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <h2 class="t-card-title">Jhon Doe</h2>
+                      <h3 class="t-card-subtitle">YouTuber</h3>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-pagination t-swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Testimonals section coding part Ends here-->
+   <!--contact section coding part Ends here-->
+   <section class="contact">
+    <div class="contact-wrapper">
+        <h3 class="c-subtitle">Have any project in Mind?</h3>
+        <h2 class="c-title">Just say Hello!</h2>
+        <div class="c-btn-wrapper">
+        <button class="c-btn">Get a Quote</button>
+        </div>
+    </div>
+   </section>
+    <!--contact section coding part Ends here-->
+</body>
+</html>
